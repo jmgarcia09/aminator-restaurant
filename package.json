@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "private": true,
   "description": "HTML Admin Template",
+  "main": "main.js",
   "scripts": {
-    "start": "webpack-dev-server",
+    "start": "electron .",
+    "start-test": "webpack-dev-server",
     "dev": "webpack-dashboard -t 'Project' -- webpack-dev-server",
     "clean": "shx rm -rf ./build",
     "build": "npm run clean && cross-env NODE_ENV=\"production\" webpack",
@@ -27,6 +29,7 @@
     "copy-webpack-plugin": "^4.2.0",
     "cross-env": "^5.1.0",
     "css-loader": "^0.28.7",
+    "electron": "^2.0.5",
     "eslint": "^4.9.0",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "2.7.0",
@@ -61,6 +64,7 @@
     "lodash": "^4.17.4",
     "masonry-layout": "^4.2.0",
     "moment": "^2.19.1",
+    "mysql": "^2.16.0",
     "perfect-scrollbar": "^1.1.0",
     "popper.js": "^1.12.6",
     "skycons": "^1.0.0"
