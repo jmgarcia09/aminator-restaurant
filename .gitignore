@@ -33,5 +33,6 @@ build/
 
 .build/
 .final-win32-x64/
+final-win32-x64
 final-win32-x64.rar
 
